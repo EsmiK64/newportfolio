@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+.container {
+  display: block;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  font-family: roboto;
+  background-color: #666666;
+}
+.big_blob {
+  width: 70vw;
+  position: static;
+  margin: 17vw 0px 0vw -7vw;
+  display: flex;
+  align-items: start;
+}
+.left {
+  display: flex;
+  align-items: start;
+  margin-left: 5vw;
+}
+.title {
+  position: absolute;
+  font-family: roboto;
+  color: #fff;
+  font-size: 5rem;
+}
+.small_blob {
+}
