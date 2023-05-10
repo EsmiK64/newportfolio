@@ -47,11 +47,12 @@
   background-color: #666666;
 }
 .big_blob {
-  width: 70vw;
   position: static;
-  margin: 17vw 0px 0vw -7vw;
+  margin: 17rem 5vw 0vw;
   display: flex;
   align-items: start;
+  opacity: 1;
+  width: 40vw;
 }
 .left {
   display: flex;
@@ -62,7 +63,30 @@
   position: absolute;
   font-family: roboto;
   color: #fff;
-  font-size: 5rem;
+  font-size: 6rem;
+  margin-top: 5vh;
 }
-.small_blob {
+
+.shadow {
+  box-shadow: 4.24px 4.24px 12px 24px black;
+  margin: 5vh 1vw 0px 10vw;
+}
+.big_text {
+  position: absolute;
+  text-align: start;
+  color: #fff;
+  font-size: 3rem;
+  display: block;
+  margin: 14vh 1vw 0vh 5vw;
+}
+.info_block {
+  display: flex;
+  align-items: end;
+  width: 40vw;
+  margin: 10vh 5vw 10vh 55vw;
+  position: absolute;
+  align-self: center;
+  height: 80vh;
+  background-color: #aaa;
+  border-radius: 3rem;
 }
