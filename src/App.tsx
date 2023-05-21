@@ -1,24 +1,94 @@
 import styles from './App.module.scss';
 import Classnames from 'classnames';
 
+function programming_section() {
+
+}
+
 function App() {
     return (
         <div className={styles.App}>
             <div className={Classnames(styles.container, styles['bg-container'])}>
                 <div className={styles.info_block}>
-                    <div className={Classnames(styles.info_block_container, styles.cool)}>
-                        <h1>Lorem ipsum</h1>
-                        <p>lorem ipsum dolor sit amet</p>
+                    <div className={styles.info_block_container} id="programming-section active">
+                        <h1>Programming</h1>
+                        <p>I am a webdesigner and a programmer. My main projects include:</p>
+                        <div className={styles['overview-section']}>
+                            <div>
+                                <h2>GDHub</h2>
+                                <p>
+                                    A Hub for all the needed to start with Geometry Dash content
+                                    creation.
+                                </p>
+                            </div>
+                            <img
+                                src="/src/assets/gdhub.png"
+                                alt="The homepage of GDHub."
+                                className={styles['small-image']}
+                            />
+                        </div>
+                        <div className={styles['overview-section']}>
+                            <div>
+                                <h2>GDVault</h2>
+                                <p>
+                                    GD Vault offers hundreds of guides to Geometry Dash Secret Ways,
+                                    allowing you to complete levels with ease.
+                                </p>
+                            </div>
+                            <img
+                                src="/src/assets/gdvault.png"
+                                alt="The homepage of GDHub."
+                                className={Classnames(
+                                    styles['small-image'],
+                                    styles['dumbass-gdvault']
+                                )}
+                            />
+                        </div>
+                    </div>
+                    <div className={styles.info_block_container} id="programming-section">
+                        <h1>Programming</h1>
+                        <p>I am a webdesigner and a programmer. My main projects include:</p>
+                        <div className={styles['overview-section']}>
+                            <div>
+                                <h2>GDHub</h2>
+                                <p>
+                                    A Hub for all the needed to start with Geometry Dash content
+                                    creation.
+                                </p>
+                            </div>
+                            <img
+                                src="/src/assets/gdhub.png"
+                                alt="The homepage of GDHub."
+                                className={styles['small-image']}
+                            />
+                        </div>
+                        <div className={styles['overview-section']}>
+                            <div>
+                                <h2>GDVault</h2>
+                                <p>
+                                    GD Vault offers hundreds of guides to Geometry Dash Secret Ways,
+                                    allowing you to complete levels with ease.
+                                </p>
+                            </div>
+                            <img
+                                src="/src/assets/gdvault.png"
+                                alt="The homepage of GDHub."
+                                className={Classnames(
+                                    styles['small-image'],
+                                    styles['dumbass-gdvault']
+                                )}
+                            />
+                        </div>
                     </div>
                 </div>
                 <h1 className={Classnames(styles.left, styles.title)}>EsmiK</h1>
                 <div>
                     <p className={styles.big_text}>
-                        <a>Programmer</a>
+                        <p onClick={document.getElementById('active').removeId}>Programmer</p>
                         <br />
-                        <a>Editor</a>
+                        <p>Editor</p>
                         <br />
-                        <a>Musician</a>
+                        <p>Musician</p>
                     </p>
                     <svg
                         version="1.1"
